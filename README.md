@@ -1,2 +1,6 @@
 # Vorterx-Scan
-Aztec scan 
+```AZTEC MD QR CODE```
+
+
+```V3.0.0```
+
